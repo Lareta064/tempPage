@@ -32,12 +32,15 @@
 
 	-webkit-font-smoothing: antialiased;
   height: 100vh;
-  min-height: 700px;
+  min-height: 900px;
   font-size: remy(16);
   font-family: 'Roboto-Regular', sans-serif;
   display: flex;
   flex-direction: column;
   &>*{width: 100%;}
+  @media(max-width:1364px){
+    min-height: 800px;
+  }
   }
   .h1{
     text-transform: uppercase;
