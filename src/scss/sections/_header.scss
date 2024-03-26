@@ -74,7 +74,7 @@
 }
 .abs-block{
 	position: absolute;
-	width: 310px;
+	width: 360px;
 	aspect-ratio: 73 / 80;
 	
 	background-image: url('../img/dashboard.webp');
@@ -84,15 +84,15 @@
 	background-position: center;
 	font-family: 'Paint-Peel-Cyr';
 	
-	font-size: 20px;
+	font-size: 24px;
 	
 	line-height: 1.4;
 	font-weight: 700;
-	padding-top: 47px;
+	padding-top: 54px;
 	line-height: 1.6;
-	right:41%;
+	right:42.5%;
 	transform: translateX(100%) ;
-	bottom: -80px;
+	bottom: -90px;
 	z-index: 2;
 	text-align: center;
 
@@ -105,7 +105,7 @@
 	// 	z-index: 2;
 	// }
 	span{
-		font-size: 31px;
+		font-size: 36px;
 		color: #df1919;
 		transform: rotate(-8deg);
 		display: block;
@@ -115,8 +115,8 @@
 		top:5px;
 	}
 	@media(max-width:1599px){
-		right: 44%;
-		bottom: -60px;
+		right: 46%;
+		bottom: -65px;
 	}
 	
 	

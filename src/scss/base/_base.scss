@@ -32,24 +32,25 @@
 
 	-webkit-font-smoothing: antialiased;
   height: 100vh;
-  min-height: 900px;
+ 
   font-size: remy(16);
   font-family: 'Roboto-Regular', sans-serif;
   display: flex;
   flex-direction: column;
   &>*{width: 100%;}
-  @media(max-width:1364px){
-    min-height: 800px;
-  }
+
   }
   .h1{
     text-transform: uppercase;
     font-size: remy(40);
     font-family: 'Roboto-Bold';
-    color: #905d1f;
-    background: linear-gradient(0deg, #905d1f 0%, gold 70%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+    color: #6c8367;
+    color: #af9740;
+    
+   
+    // background: linear-gradient(0deg, #905d1f 0%, gold 70%);
+    //   -webkit-background-clip: text;
+    //   -webkit-text-fill-color: transparent;
       
   }
   .txt-accent{color:#000!important; }
