@@ -1,8 +1,23 @@
 header.header
 	.container 
 		.header-content
-			.header-logo
-				a(href="#!").custom-logo
-					img(src="./img/logo.webp", width="100" alt="logo")
-			
-			
+			.header-left
+				h1.h1 ЭКЗОГОЛД
+				address ЦМТ, Краснопресненская набережная 12,<br> Москва
+			.header-right
+				.contact-item
+					svg(width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg')
+						path(fill-rule='evenodd' clip-rule='evenodd' d='M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round')
+						path(d='M22 6L12 13L2 6' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round')
+
+					a.text-link(href="mailto:Info@exogold.ru ") Info@exogold.ru
+main.page-main
+	.container
+		.about-text
+			p Компания #[span.txt-ac «ЭКЗОГОЛД»] специализируется на нишевых инвестиционных проектах, требующих значительного инжинирингового опыта, в части обогащения концентратов, руд, шламов, отходов и прочего сырья, содержащих цветные и драгоценные металлы. 
+			p В фокусе наших интересов проекты, находящиеся вне зоны внимания основных игроков отрасли по причине небольших масштабов и технологической специфики. 
+			p Ключевыми компетенциями является обогащение сложного исходного сырья с извлечением полезного продукта от 75% до 95% в ранее отработанных технологических рудах. 
+			p.text-left В случае Вашей заинтересованности пишите #[a.txt-accent(href="mailto:Info@exogold.ru") Info@exogold.ru ]
+	.abs-block
+		p САЙТ НАХОДИТСЯ#[br]В ПРОЦЕССЕ#[br]#[span ЭКСКАВАЦИИ!]
+		img.bottom-img(src="./img/ch3.webp", alt="")

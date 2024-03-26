@@ -2,6 +2,17 @@
 
   @return calc(($pxsize/16))+rem;
 }
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
 * {
 	  box-sizing: border-box;
     background-repeat: no-repeat;
@@ -18,9 +29,45 @@
 	margin: 0;
 	padding: 0;
 	width: 100%;
- 
-	-webkit-font-smoothing: antialiased;
 
+	-webkit-font-smoothing: antialiased;
+  height: 100vh;
+  min-height: 700px;
+  font-size: remy(16);
+  font-family: 'Roboto-Regular', sans-serif;
+  display: flex;
+  flex-direction: column;
+  &>*{width: 100%;}
+  }
+  .h1{
+    text-transform: uppercase;
+    font-size: remy(40);
+    font-family: 'Roboto-Bold';
+    color: #905d1f;
+    background: linear-gradient(0deg, #905d1f 0%, gold 70%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      
+  }
+  .txt-accent{color:#000!important; }
+  .text-link{
+    font-family: 'Roboto-Bold';
+    position: relative;
+    width: fit-content;
+    &:after{
+      content: '';
+      display: block;
+      height: 2px;
+      width: 0;
+      position: absolute;
+      left: 0;
+      background-color: #777;
+      transition: .3s; 
+    }
+    &:hover{color:#777; }
+    &:hover:after{
+      width: 100%;
+    }
   }
   .lock {
 	overflow: hidden;
@@ -71,9 +118,12 @@
   }
 
 .container{
-  max-width: 1440px;
+  max-width: 1600px;
   width: 100%;
   margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  
+  @media(max-width:1799px){
+    padding-left: 80px;
+    padding-right: 80px;
+  }
 }
