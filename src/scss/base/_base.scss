@@ -2,17 +2,6 @@
 
   @return calc(($pxsize/16))+rem;
 }
-.roboto-regular {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.roboto-bold {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
 * {
 	  box-sizing: border-box;
     background-repeat: no-repeat;
@@ -38,6 +27,9 @@
   display: flex;
   flex-direction: column;
   &>*{width: 100%;}
+  @media (max-width: 767px) {
+    height: auto;
+  }
 
   }
   .h1{
@@ -46,16 +38,14 @@
     font-family: 'Roboto-Bold';
     color: #6c8367;
     color: #af9740;
+    @media (max-width: 767px) {
+      font-size: remy(24);
+    }
     
-   
-    // background: linear-gradient(0deg, #905d1f 0%, gold 70%);
-    //   -webkit-background-clip: text;
-    //   -webkit-text-fill-color: transparent;
-      
   }
   .txt-accent{color:#000!important; }
   .text-link{
-    font-family: 'Roboto-Bold';
+   
     position: relative;
     width: fit-content;
     &:after{
@@ -129,5 +119,9 @@
   @media(max-width:1799px){
     padding-left: 80px;
     padding-right: 80px;
+  }
+  @media (max-width: 767px) {
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
